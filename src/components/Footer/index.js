@@ -1,11 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
 import "./style.css";
 
 export default function Footer(props) {
     return (
-        <footer>
+        <footer className="Footer">
         <h4>
             {/* <Link to="https://github.com/dianastebbins" className="nav-item nav-link">GitHub</Link> */}
             <a className="ftr-link" target="_blank" rel="noopener noreferrer" href="https://github.com/dianastebbins">
