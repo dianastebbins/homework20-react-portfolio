@@ -5,7 +5,6 @@ export default function Footer(props) {
     return (
         <footer className="Footer">
         <h4>
-            {/* <Link to="https://github.com/dianastebbins" className="nav-item nav-link">GitHub</Link> */}
             <a className="ftr-link" target="_blank" rel="noopener noreferrer" href="https://github.com/dianastebbins">
                 <i className="fab fa-github"></i> GitHub</a>
             <a className="ftr-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/diana-stebbins-b618b034">

@@ -5,16 +5,24 @@ import { Link } from "react-router-dom";
 import "./style.css"
 import API from "../../utils/API"
 
-// import SomeComponent from '../../components/SomeComponent';
+import ProjectCard from '../../components/ProjectCard';
 
 export default function PortfolioPage() {
     // const portfolioDetails = [
     //     {name:"Weather Dashboard"},
     //     {name:"Frustration."}
     // ]
-    const [portfolioDetailsState,setPortfolioDetailsState]= useState([
-        {name:"Weather Dashboard"},
-        {name:"Frustration."}
+    const [portfolioDetailsState, setPortfolioDetailsState] = useState([
+        {
+            header: "Weather Dashboard",
+            title: "",
+            text: "",
+            imageName: "",
+            imageAlt: "",
+            appGithub: "",
+            appUrl: "",
+            footer: ""
+        }
     ])
 
     // useEffect(()=>{
@@ -29,10 +37,10 @@ export default function PortfolioPage() {
     //     console.log("portList: " + portList)
     //     setPortfolioState(API.getPortfolioProjectInfo());
     //     console.log("HERE 2");
-        
+
     //     console.log(portfolioState)
     //     console.log("HERE 3");
-        
+
     // },[])
 
     // const params = useParams(); // for retrieving id from .../path/:id apis
@@ -62,8 +70,9 @@ export default function PortfolioPage() {
     return (
         <div className="PortfolioPage">
             <h1>PortfolioPage</h1>
-            <h3>Navbar goes here</h3>
+
             {portfolioDetailsState[0].name}
+            <ProjectCard data={portfolioDetailsState[0]} />
             <h3>Content goes here</h3>
             <Link to="/contact" >temporary link to ContactPage</Link>
         </div>
