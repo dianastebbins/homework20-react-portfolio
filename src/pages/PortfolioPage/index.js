@@ -8,19 +8,31 @@ import API from "../../utils/API"
 // import SomeComponent from '../../components/SomeComponent';
 
 export default function PortfolioPage() {
-    // const [playerState,setPlayerState]= useState({
-    //     name:'',
-    //     team:''
-    // })
+    // const portfolioDetails = [
+    //     {name:"Weather Dashboard"},
+    //     {name:"Frustration."}
+    // ]
+    const [portfolioDetailsState,setPortfolioDetailsState]= useState([
+        {name:"Weather Dashboard"},
+        {name:"Frustration."}
+    ])
 
     // useEffect(()=>{
-    //     API.getAllPlayers().then(res=>{
-    //         console.log(res.data)
-    //         setPlayersState(res.data)
-    //         setFilteredPlayersState(res.data)
-    //     }).catch(err=>{
-    //         console.log(err);
-    //     })
+    //     // API.getPortfolioProjectInfo().then(res=>{
+    //     //     console.log(res.data)
+    //     //     setPortfolioState(res.data)
+    //     // }).catch(err=>{
+    //     //     console.log(err);
+    //     // })
+    //     console.log("HERE 1");
+    //     const portList = API.getPortfolioProjectInfo();
+    //     console.log("portList: " + portList)
+    //     setPortfolioState(API.getPortfolioProjectInfo());
+    //     console.log("HERE 2");
+        
+    //     console.log(portfolioState)
+    //     console.log("HERE 3");
+        
     // },[])
 
     // const params = useParams(); // for retrieving id from .../path/:id apis
@@ -51,6 +63,7 @@ export default function PortfolioPage() {
         <div className="PortfolioPage">
             <h1>PortfolioPage</h1>
             <h3>Navbar goes here</h3>
+            {portfolioDetailsState[0].name}
             <h3>Content goes here</h3>
             <Link to="/contact" >temporary link to ContactPage</Link>
         </div>
