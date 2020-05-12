@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
-import StatsPage from './pages/StatsPage';
-import AddPlayerPage from './pages/AddPlayerPage';
-import DetailsPage from "./pages/DetailsPage"
+import AboutPage from './pages/AboutPage';
+import PortfolioPage from './pages/PortfolioPage';
+import ContactPage from "./pages/ContactPage"
 
 
 function App() {
@@ -10,13 +10,13 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-          <StatsPage />
+          <AboutPage />
         </Route>
-        <Route exact path="/add">
-          <AddPlayerPage/>
+        <Route exact path="/portfolio">
+          <PortfolioPage/>
         </Route>
-        <Route exact path ="/player/:id">
-          <DetailsPage/>
+        <Route exact path ="/contact">
+          <ContactPage/>
         </Route>
       </Switch>
     </Router>
