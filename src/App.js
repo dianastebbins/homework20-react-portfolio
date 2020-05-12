@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import AboutPage from "./pages/AboutPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage"
@@ -21,6 +22,7 @@ function App() {
           <ContactPage />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }

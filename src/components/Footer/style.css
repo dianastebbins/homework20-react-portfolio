@@ -1,0 +1,27 @@
+footer { 
+    background-color: white;
+    border-bottom: rgb(240, 220, 240) solid 5px;
+    border-top: rgb(240, 220, 240) solid 5px;
+    bottom: 0;
+    color: black;
+    height: 60px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.fas, .fab {
+    color: purple;
+    font-size: 14px;
+    padding-top: 20px;
+}
+
+.ftr-info, .ftr-link {
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ftr-link, .nav-link {
+    color: black;
+}
