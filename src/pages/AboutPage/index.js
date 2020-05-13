@@ -107,7 +107,7 @@ export default function AboutPage() {
                             <div className="col-sm-12">
                                 <h1>Meet Diana</h1>
                                 <hr className="purple" />
-                                <img className="wrapTextUnder" id="profilePic" src="assets/ProfilePic.jpg" alt="Diana Stebbins profile picture" />
+                                <img className="wrapTextUnder" id="profilePic" src="assets/ProfilePic.jpg" alt="Diana Stebbins profile" />
                                 <ContentBlock paragraphs={aboutMeContentState} />
                             </div>
                         </div>

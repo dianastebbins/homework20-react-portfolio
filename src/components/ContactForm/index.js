@@ -20,7 +20,8 @@ export default function ContactForm(props) {
                     <label htmlFor="message">Message</label>
                     <textarea className="form-control" id="message" rows="3"></textarea>
                 </div>
-                <button type="submit" className="btn btn-outline-primary customBtn" onChange={props.handleFormSubmit}>Submit</button>
+                {/* if they page isn't functional yet, at least tell the user that...replace with onClick={props.handleFormSubmit} later */}
+                <button type="submit" className="btn btn-outline-primary customBtn" onClick={() => {window.confirm("Sorry, email is actually not implemented yet...")}}>Submit</button>
             </form>
         </div>
     )

@@ -11,7 +11,7 @@ export default function ListCard(props) {
                     {props.data.list.map(item => <li key={item.id}> {item.content} </li>)}
                 </ul>
             </div>
-            <div className="card-footer"><large className="text-muted"></large></div>
+            <div className="card-footer"><span className="text-muted"></span></div>
         </div>
     )
 }

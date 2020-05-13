@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { useParams, useHistory } from "react-router-dom"
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'
 
 import "./style.css"
 import ProjectCard from '../../components/ProjectCard';
 
 export default function PortfolioPage() {
-    // const portfolioDetails = [
-    //     {name:"Weather Dashboard"},
-    //     {name:"Frustration."}
-    // ]
+    // maybe someday this lives in a database table and it's just an API call here...
     const [portfolioDetailsState, setPortfolioDetailsState] = useState([
         {
             id: 0,

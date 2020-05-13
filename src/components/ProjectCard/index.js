@@ -16,7 +16,7 @@ export default function ProjectCard(props) {
                     href={props.data.appGithub}>GitHub repo link</a>
             </p>
             <a target="_blank" rel="noopener noreferrer" href={props.data.appUrl}>
-                <div className="card-footer"><large className="text-muted"> {props.data.footer} </large></div>
+                <div className="card-footer"><span className="text-muted"> {props.data.footer} </span></div>
             </a>
         </div>
     )

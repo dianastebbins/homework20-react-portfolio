@@ -1,4 +1,4 @@
-.navbar {
+.Nav {
     background: white;
     border-top: rgb(240, 220, 240) solid 5px;
     padding-bottom: 0;
@@ -14,33 +14,4 @@
 
 .navbar-brand:hover {
     color: black;
-}
-
-
-/* The point where the cards are narrow but not yet stacked*/
-@media screen and (min-width: 576px) {
-    .card-img-top {
-        align-self: center;
-        height: 150px;
-        width: 100px;
-    }
-    .card-title,
-    .card-text {
-        font-size: 12px;
-    }
-}
-
-/* Width at 768px and above, cards are larger sized */
-@media screen and (min-width: 768px) {
-    .wrapTextUnder {
-        float: right;
-    }
-    .card-img-top {
-        align-self: center;
-        height: 200px; 
-        width: 150px;
-    }
-    .card-title {
-        font-size: 18px;
-    }
 }
