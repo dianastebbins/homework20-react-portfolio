@@ -6,12 +6,6 @@ h1 {
     color: purple;
 }
 
-/* h4 {
-    font-size: 12px;
-    margin-top: 18px;
-    padding-top: 5px;
-} */
-
 hr.purple {
     border-top: 3px solid purple;
 }
@@ -24,21 +18,6 @@ hr.purple {
     width: 100%;
 }
 
-/* .customBtn,
-.customBtn:hover {
-    border: 1px solid purple;
-}
-
-.customBtn {
-    border-color: purple;
-    color: purple;
-}
-
-.customBtn:hover {
-    background-color: purple;
-    color: white;
-} */
-
 .wrapTextUnder {
     float: right;
     margin-left: 10px;
@@ -48,31 +27,3 @@ hr.purple {
     max-height: 200px;
     max-width: 200px;
 }
-
-/* The point where the cards are narrow but not yet stacked*/
-/* @media screen and (min-width: 576px) {
-    .card-img-top {
-        align-self: center;
-        height: 150px;
-        width: 100px;
-    }
-    .card-title,
-    .card-text {
-        font-size: 12px;
-    }
-} */
-
-/* Width at 768px and above, cards are larger sized */
-/* @media screen and (min-width: 768px) {
-    .wrapTextUnder {
-        float: right;
-    }
-    .card-img-top {
-        align-self: center;
-        height: 200px; 
-        width: 150px;
-    }
-    .card-title {
-        font-size: 18px;
-    }
-} */

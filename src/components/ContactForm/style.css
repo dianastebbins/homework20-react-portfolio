@@ -1,0 +1,14 @@
+.customBtn,
+.customBtn:hover {
+    border: 1px solid purple;
+}
+
+.customBtn {
+    border-color: purple;
+    color: purple;
+}
+
+.customBtn:hover {
+    background-color: purple;
+    color: white;
+}

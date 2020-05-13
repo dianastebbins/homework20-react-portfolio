@@ -12,10 +12,10 @@ export default function ProjectCard(props) {
             </div>
             <img className="card-img-top" src={props.data.imageName} alt={props.data.imageAlt} />
             <p className="card-repo">
-                <a className="card-repo-link" target="_blank"
+                <a className="card-repo-link" target="_blank" rel="noopener noreferrer" 
                     href={props.data.appGithub}>GitHub repo link</a>
             </p>
-            <a target="_blank" href={props.data.appUrl}>
+            <a target="_blank" rel="noopener noreferrer" href={props.data.appUrl}>
                 <div className="card-footer"><large className="text-muted"> {props.data.footer} </large></div>
             </a>
         </div>

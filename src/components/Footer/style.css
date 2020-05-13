@@ -13,7 +13,11 @@
 .fas, .fab {
     color: purple;
     font-size: 14px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+}
+
+.footerLinks {
+    margin-top: 12px;
 }
 
 .ftr-info, .ftr-link {

@@ -5,7 +5,7 @@ import ContentBlock from "../../components/ContentBlock";
 import ListCard from "../../components/ListCard";
 
 export default function AboutPage() {
-    // not really the correct use of state, but I wanted the practice
+    // not really the correct use of state as these don't really change, but I wanted the practice
     const [aboutMeContentState, setAboutMeContentState] = useState([
         {
             id: 0,
@@ -21,7 +21,7 @@ export default function AboutPage() {
         },
         {
             id: 3,
-            content: "With the aging of the application into more of a maintenance mode however, I wanted to take on bigger development challenges. Recognizing that my skills were dated, I enrolled in the Full Stack Web Development Bootcamp offered at UW Extension. I have learned many new technologies and have been able to immediately apply them to several projects. You can check out some of my projects by visiting the Portfolio page."
+            content: "With the aging of that application into maintenance and support mode, I wanted to take on development challenges utilizing newer technologies. I enrolled in the Full Stack Web Development Bootcamp offered at UW Extension. I have added many newer technologies to my skillset and am eager to apply them beyond class projects. You can check out examples of my class project by visiting my Portfolio page."
         }
     ]);
 
@@ -76,19 +76,19 @@ export default function AboutPage() {
             },
             {
                 id: 2,
-                content: "Critical thinking and problem-solving skills"
-            },
-            {
-                id: 3,
                 content: "Exemplary time and project management skills"
             },
             {
-                id: 4,
+                id: 3,
                 content: "Excellent written and verbal communication skills"
             },
             {
-                id: 5,
+                id: 4,
                 content: "Proven trouble-shooting and bug resolution abilities"
+            },
+            {
+                id: 5,
+                content: "Excellent critical thinking and problem-solving skills"
             },
             {
                 id: 6,
@@ -99,32 +99,30 @@ export default function AboutPage() {
 
     return (
         <div className="AboutPage">
-            {/* <div className="container"> */}
-                <div className="row">
-                    <div className="col-sm-1" id="column-one"></div>
-                    <div className="col-sm-10" id="column-two">
-                        <section className="contentSection">
-                            <div className="row">
-                                <div className="col-sm-12">
-                                    <h1>Meet Diana</h1>
-                                    <hr className="purple" />
-                                    <img className="wrapTextUnder" id="profilePic" src="assets/ProfilePic.jpg" alt="Diana Stebbins profile picture" />
-                                    <ContentBlock paragraphs={aboutMeContentState} />
-                                </div>
+            <div className="row">
+                <div className="col-sm-1" id="column-one"></div>
+                <div className="col-sm-10" id="column-two">
+                    <section className="contentSection">
+                        <div className="row">
+                            <div className="col-sm-12">
+                                <h1>Meet Diana</h1>
+                                <hr className="purple" />
+                                <img className="wrapTextUnder" id="profilePic" src="assets/ProfilePic.jpg" alt="Diana Stebbins profile picture" />
+                                <ContentBlock paragraphs={aboutMeContentState} />
                             </div>
-                            <div className="row">
-                                <div className="col-sm-5">
-                                    <ListCard data={technicalSkillsState} />
-                                </div>
-                                <div className="col-sm-7">
-                                    <ListCard data={professionalSkillsState} />
-                                </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm-5">
+                                <ListCard data={technicalSkillsState} />
                             </div>
-                        </section>
-                    </div>
-                    <div className="col-sm-1" id="column-three"></div>
+                            <div className="col-sm-7">
+                                <ListCard data={professionalSkillsState} />
+                            </div>
+                        </div>
+                    </section>
                 </div>
-            {/* </div> */}
+                <div className="col-sm-1" id="column-three"></div>
+            </div>
         </div>
     )
 }

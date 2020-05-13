@@ -3,8 +3,6 @@ import { useParams, useHistory } from "react-router-dom"
 import { Link } from "react-router-dom";
 
 import "./style.css"
-import API from "../../utils/API"
-
 import ProjectCard from '../../components/ProjectCard';
 
 export default function PortfolioPage() {
@@ -95,49 +93,6 @@ export default function PortfolioPage() {
             footer: "Protect me!"
         }
     ])
-
-    // useEffect(()=>{
-    //     // API.getPortfolioProjectInfo().then(res=>{
-    //     //     console.log(res.data)
-    //     //     setPortfolioState(res.data)
-    //     // }).catch(err=>{
-    //     //     console.log(err);
-    //     // })
-    //     console.log("HERE 1");
-    //     const portList = API.getPortfolioProjectInfo();
-    //     console.log("portList: " + portList)
-    //     setPortfolioState(API.getPortfolioProjectInfo());
-    //     console.log("HERE 2");
-
-    //     console.log(portfolioState)
-    //     console.log("HERE 3");
-
-    // },[])
-
-    // const params = useParams(); // for retrieving id from .../path/:id apis
-    // const history = useHistory();
-
-    // const handleDeleteBtnClick = event=>{
-    //     event.preventDefault();
-    //     API.deletePlayerById(params.id).then(res=>{
-    //         history.push('/')
-    //     })
-    // }
-
-    // const handleFormSubmit = event=>{
-    // OR
-    // const handleInputChange = event=>{
-    //     event.preventDefault();
-    //     API.createPlayer(playerState).then(newPlayer=>{
-    //         console.log(newPlayer)
-    //         setPlayerState({
-    //             name:'',
-    //             team:''
-    //         })
-    //         history.push("/")
-    //     })
-    // }
-
 
     // because of rows/columns, need to create a dynamic Grid Component that would 
     // take an array of ProjectCards along with column size parameters. But that hurts

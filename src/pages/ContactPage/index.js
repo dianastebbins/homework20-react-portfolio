@@ -3,9 +3,8 @@ import { useParams, useHistory } from "react-router-dom"
 import { Link } from "react-router-dom";
 
 import "./style.css"
-import API from "../../utils/API"
 
-// import SomeComponent from '../../components/SomeComponent';
+import ContactForm from '../../components/ContactForm';
 
 export default function ContactPage() {
     // const [playerState,setPlayerState]= useState({
@@ -33,26 +32,22 @@ export default function ContactPage() {
     //     })
     // }
 
-    // const handleFormSubmit = event=>{
-    // OR
-    // const handleInputChange = event=>{
-    //     event.preventDefault();
-    //     API.createPlayer(playerState).then(newPlayer=>{
-    //         console.log(newPlayer)
-    //         setPlayerState({
-    //             name:'',
-    //             team:''
-    //         })
-    //         history.push("/")
-    //     })
-    // }
+    const handleFormSubmit = event => {
+        event.preventDefault();
+        alert("Sorry, email is not actually implemented yet!");
+    }
 
     return (
         <div className="ContactPage">
-            <h1>ContactPage</h1>
-            <h3>Navbar goes here</h3>
-            <h3>Content goes here</h3>
-            <Link to="/" >temporary link to AboutPage</Link>
+            <div className="row" id="contactPageContent">
+                <div className="col-sm-1" id="column-one"></div>
+                <div className="col-sm-10" id="column-two">
+                    <section className="contentSection">
+                        <ContactForm handleFormSubmit={handleFormSubmit} />
+                    </section>
+                </div>
+                <div className="col-sm-1" id="column-three"></div>
+            </div>
         </div>
     )
 }

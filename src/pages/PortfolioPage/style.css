@@ -6,35 +6,14 @@ h1 {
     color: purple;
 }
 
-/* h4 {
-    font-size: 12px;
-    margin-top: 18px;
-    padding-top: 5px;
-} */
-
 hr.purple {
     border-top: 3px solid purple;
 }
 
 .contentSection {
     background: white;
-    margin-bottom: 65px;
+    /* margin-bottom: 65px; */
     margin-top: 5px;
     padding: 20px;
     width: 100%;
 }
-
-/* .customBtn,
-.customBtn:hover {
-    border: 1px solid purple;
-}
-
-.customBtn {
-    border-color: purple;
-    color: purple;
-}
-
-.customBtn:hover {
-    background-color: purple;
-    color: white;
-} */
