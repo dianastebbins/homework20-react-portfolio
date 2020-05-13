@@ -4,7 +4,7 @@ import "./style.css";
 
 export default function ProjectCard(props) {
     return (
-        <div className="ProjectCard card">
+        <div className="ProjectCard card" key={props.data.id}>
             <div className="card-header"> {props.data.header} </div>
             <div className="card-body">
                 <h5 className="card-title"> {props.data.title} </h5>
