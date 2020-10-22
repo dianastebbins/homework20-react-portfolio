@@ -30,12 +30,12 @@ export default function PortfolioPage() {
             id: 2,
             header: "Project (Group)",
             title: "Mark-it",
-            text: "Under Construction!",
-            imageName: "assets/ComingSoon.PNG",
-            imageAlt: "Coming soon!",
+            text: "Farm to App to Table!",
+            imageName: "assets/markIt.PNG",
+            imageAlt: "Mark-It app screenshot",
             appGithub: "",
-            appUrl: "",
-            footer: "Soon!"
+            appUrl: "https://awesome-mark-it.herokuapp.com/",
+            footer: "Check it out!"
         }, {
             id: 3,
             header: "Widget",

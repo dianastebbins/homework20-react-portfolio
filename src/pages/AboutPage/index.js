@@ -9,11 +9,11 @@ export default function AboutPage() {
     const [aboutMeContentState, setAboutMeContentState] = useState([
         {
             id: 0,
-            content: "Hello! My name is Diana Stebbins. I am a former UW CSE grad (go Dawgs!), married, a mom and now a Full Stack Web Development Bootcamp student excited to re-enter software development with an updated skill set."
+            content: "Hello! My name is Diana Stebbins. I am a former UW CSE grad (go Dawgs!), married, a mom and now a Full Stack Web Development Bootcamp graduate excited to re-enter software development with an updated skill set."
         },
         {
             id: 1,
-            content: "I have 18 years experience as a software developer working on a variety of projects and platforms. My first development experiences were programming handheld scanners in C, VB.net, C# and java. I then spent many years adding functionality to a complex order management system web application written primarily in java and javascript and supported by a number of proprietary libraries (database orm, communication, user authorization)."
+            content: "I have 18 years experience as a software developer working on a variety of projects and platforms. My first development experiences were programming handheld scanners in C, C++, VB.net and C#. I then spent many years adding functionality to a complex order management web application written primarily in Java and JavaScript and supported by a number of proprietary libraries (database orm, communication, user authorization)."
         },
         {
             id: 2,
@@ -21,7 +21,7 @@ export default function AboutPage() {
         },
         {
             id: 3,
-            content: "With the aging of that application into maintenance and support mode, I wanted to take on development challenges utilizing newer technologies. I enrolled in the Full Stack Web Development Bootcamp offered at UW Extension. I have added many newer technologies to my skillset and am eager to apply them beyond class projects. You can check out examples of my class project by visiting my Portfolio page."
+            content: "With the aging of that application into maintenance and support mode, I wanted to take on development challenges utilizing newer technologies. I enrolled in the Full Stack Web Development Bootcamp offered at UW Extension. I have added many newer technologies to my skillset and am eager to apply them beyond class projects. You can check out examples of my class projects by visiting my Portfolio page."
         }
     ]);
 
@@ -30,35 +30,35 @@ export default function AboutPage() {
         list: [
             {
                 id: 0,
-                content: "HTML, React, Handlebars"
+                content: "Java, C#, VB.net, C++, C"
             },
             {
                 id: 1,
-                content: "CSS, Bootstrap"
+                content: "HTML, React, Handlebars"
             },
             {
                 id: 2,
-                content: "JavaScript, jQuery"
+                content: "CSS, Bootstrap"
             },
             {
                 id: 3,
-                content: "API calls, AJAX, JSON"
+                content: "JavaScript, jQuery"
             },
             {
                 id: 4,
-                content: "Node.js, express server"
+                content: "API calls, AJAX, JSON"
             },
             {
                 id: 5,
-                content: "MySQL, Sequelize, MongoDB"
+                content: "Node.js, express server"
             },
             {
                 id: 6,
-                content: "MVC, OOP"
+                content: "MySQL, Sequelize, MongoDB"
             },
             {
                 id: 7,
-                content: "Java, C#, VB.net, C++, C"
+                content: "MVC, OOP concepts and Agile methodology"
             }
         ]
     });
@@ -72,28 +72,33 @@ export default function AboutPage() {
             },
             {
                 id: 1,
-                content: "Proven evaluation and analysis abilities"
+                content: "Self-motivated and directed"
             },
             {
                 id: 2,
-                content: "Exemplary time and project management skills"
+                content: "Maintains quality work under pressure"
             },
             {
                 id: 3,
-                content: "Excellent written and verbal communication skills"
+                content: "Excellent written and oral communicator"
             },
             {
                 id: 4,
-                content: "Proven trouble-shooting and bug resolution abilities"
+                content: "Exemplary time and project management skills"
             },
             {
                 id: 5,
-                content: "Excellent critical thinking and problem-solving skills"
+                content: "Responsible, conscientious and accountable work ethic"
             },
             {
                 id: 6,
-                content: "Experienced working as part of a team toward a singular goal"
+                content: "Excellent critical thinking and problem-solving skills"
+            },
+            {
+                id: 7,
+                content: "Successful collaborator with team members at all levels"
             }
+            
         ]
     });
 
